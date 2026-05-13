@@ -27,7 +27,7 @@ create table project(
 );
 
 alter table employee add email varchar(100) unique;
-alter table project modify project_name varchar(100);
+alter table project modify project_name varchar(200);
 alter table project add constraint check_date check(end_date>=start_date);
 
 
